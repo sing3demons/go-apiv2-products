@@ -20,7 +20,7 @@ func main() {
 	r := gin.Default()
 
 	r.Static("/uploads", "./uploads")
-	uploadDirs := [...]string{"users", "articles"}
+	uploadDirs := [...]string{"users", "product"}
 	for _, dir := range uploadDirs {
 		os.MkdirAll("uploads/"+dir, 755)
 	}
